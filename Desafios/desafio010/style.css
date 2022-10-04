@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url(midias/fontes/idroid.otf)
+    format(opentype);
+}
+
+:root{
+    --cor0:#C0C8F0;
+    --cor1:#778AED;
+    --cor2:#5E6EBD;
+    --cor3:#4A5694;
+    --cor4:#474E70;
+    --cor5:rgba(195, 116, 226, 0.801);
+
+    --font-top: 'Bebas Neue', cursive;
+    --font-title: 'idroid', cursive;
+    --font-main: Arial, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+}
+
+/*CABEÇALHO*/
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    height: 180px;
+    font-family: var(--font-top);
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.493);
+}
+
+header h1{
+    font-size: 26pt;
+    text-align: center;
+    padding: 20px 8px 15px 8px;
+}
+
+header p{
+    font-size: 14.5pt;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+nav{
+    font-weight: normal;
+    font-family: var(--font-top);
+    padding: 5px;
+    background-color: var(--cor1);
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    font-size: 13pt;
+    transition: 0.5s;
+    margin-left: 6.5px;
+}
+
+nav a:hover{
+    background-color: var(--cor0);
+    border-radius: 3px;
+    padding: 3px;
+    color: var(--cor2);
+}
+
+/*CONTEÚDO PRINCIPAL*/
+
+main{
+    min-width: 280px;
+    max-width: 1000px;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 10px;
+}
+
+main article > h1{
+    font-family: var(--font-title);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding-left: 5px;
+    margin-bottom: 3px;
+    color: var(--cor4);
+}
+
+main article > h2{
+    font-family: var(--font-title);
+    font-size: 14pt;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding-left: 5px;
+    margin-bottom: 3px;
+    color: var(--cor4);
+}
+
+main article > p{
+    font-family: var(--font-main);
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px;
+}
+
+main article p > strong{
+    color: var(--cor2);
+}
+
+main article a{
+    text-decoration: none;
+    color: var(--cor3);
+    transition: 1s;
+}
+
+main article a:hover{
+    font-weight: bold;
+}
+
+main article a::after{
+    content: "🔗";
+}
+
+main article .imagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.video{
+    margin: 0px -20px 20px -20px;
+    padding: 20px;
+}
+
+/*CONTEUDO EXTRA*/
+
+aside {
+    background-color:rgb(212, 190, 233);
+    border-radius: 10px;
+    max-width: 800px;
+    min-width: 400px; 
+    margin: auto;
+    font-family: var(--font-main);
+    box-shadow: 3px 3px 8px rgba(82, 43, 82, 0.493);
+}
+
+aside > h3{
+    background-color: var(--cor3);
+    padding: 3px;
+    padding-left: 7px;
+    color: rgb(212, 190, 233);
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > p{
+    padding: 5px;
+    text-indent: 20px;
+}
+
+aside > ul{
+    list-style-position: inside;
+    padding: 5px;
+    columns: 2;
+    list-style-type:'✔️';
+}
+
+/*RODAPÉ*/
+
+footer{
+    background-color: var(--cor3);
+    margin-top: 20px;
+}
+
+footer p{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-family: var(--font-main);
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.575);
+}
+
+footer p strong{
+    color: var(--cor0);
+    font-size: 13.5pt;
+}
+
+footer p a{
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 13.5pt;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}

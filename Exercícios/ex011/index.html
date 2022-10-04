@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de mídias</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas no HTML5</h1>
+    
+    <p>Para testar o recurso picture, use vários dispositivos ou aumente e diminue sua página no navegador</p>
+    
+    <picture>
+        <source media="(max-width: 705px)" srcset="imagens/foto-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-media.png" type="image/png">
+        <img src="imagens/foto-grande.png" alt="Imagem dinâmica">
+    </picture>
+    
+    <h1>Colocando áudio</h1>
+    
+    <p>Vamos colocar um áudio no site agora.</p>
+    
+    <audio preload="auto" autoplay controls>
+        <source src="Meduza - Piece Of Your Heart (Visualizer) ft. Good(MP3_160K).mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Colocando vídeos</h1>
+    <p>Vamos colocar um vídeo em nosso site.</p>
+    
+    <p>Podemos incorporar o vídeo direto do youtube:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/e6yUmOtchLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Ou podemos carregar do nosso arquivo:</p>
+    <video width="500" controls>
+        <source src="video-teste.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

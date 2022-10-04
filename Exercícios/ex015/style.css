@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(206, 255, 239);
+}
+
+h1{
+    color: brown;
+    text-align: center;
+    font-size: 40px;
+}
+
+h1#principle{
+    color: black;
+    margin-top: 60px;
+    background-color: green;
+}
+
+.inicio{
+    color:red;
+    text-align: justify;
+    margin: auto;
+}
+
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:red;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: black;
+}
+
+a:hover{
+    color:white;
+    transition: 0.3s;
+    padding: 11px;
+}
+
+a:visited{
+    color: blue;
+    padding: 15px;
+    background-color: white;
+}
