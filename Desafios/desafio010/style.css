@@ -135,8 +135,9 @@ main article .imagens{
     justify-content: center;
 }
 
-div.video{
-    margin: 0px -20px 20px -20px;
+main article .video{
+    background-color: #474E70;
+    margin: 0px -10px 20px -10px;
     padding: 20px;
 }
 
