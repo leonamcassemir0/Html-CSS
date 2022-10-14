@@ -41,7 +41,7 @@ a{
 a:hover{
     text-decoration: underline;
 }
-/*------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------*/
 
 
 /*CONTEÚDO*/
@@ -50,6 +50,11 @@ section{
     line-height: 40px;
     font-family: var(--font-poema);
     font-size: 30px;    
+}
+
+section > p{
+    padding-bottom: 2em;
+    text-shadow: 1px 1px 0px black;
 }
 
 .normal{
@@ -61,6 +66,7 @@ section{
 .imagem{
     padding-top: 60px;
     padding-bottom: 60px;
+    box-shadow: inset 6px 6px 13px 0px black;
 
 }
 
@@ -73,16 +79,18 @@ section{
 
 #b1{
     background-image: url(../imagens/background001.jpg);
-    background-position: left center;
+    background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
 }
 
 #b2{
     background-image: url(../imagens/background002.jpg);
-    background-position: center center;
+    background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
 }
-/*------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------*/
 
 
 /*RODAPÉ*/
@@ -94,4 +102,4 @@ footer{
     padding: 5px;
     text-align: center;
 }
-/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------*/
