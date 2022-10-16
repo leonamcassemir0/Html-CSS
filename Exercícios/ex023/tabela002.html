@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+          text-align: center;
+          font-size: 3rem;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            margin: auto;
+        }
+
+        td, th{
+            padding: 10px;
+            border: 2px solid black;
+            font-weight: bolder;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        .cont{
+            background-color: gray;
+            width: 8px;
+            text-align: center;
+            color: white;
+        }
+
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        .total{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        <table>
+            <thead>
+                <tr>, <th>, <td>
+            </thead>
+            <tbody>
+                <tr>, <th>, <td>
+            </tbody>
+            <tfoot>
+                <tr>, <th>, <td>
+            </tfoot>
+        </table>
+    -->
+
+    <h1>Tabelas com muitos dados</h1>
+
+    <table>
+        <!--======== CABEÇALHO ========-->
+        <thead>
+            <tr>
+                <th class="cont"></th>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <!--==========================-->
+
+        <!--======== CONTEÚDO ========-->
+        <tbody>
+            <tr>
+                <td class="cont">1</td>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+            </tr>
+            <tr>
+                <td class="cont">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21.411.923</td>
+            </tr>
+            <tr>
+                <td class="cont">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</td>
+            </tr>
+            <tr>
+                <td class="cont">4</td>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+            <tr>
+                <td class="cont">5</td>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+            <tr>
+                <td class="cont">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td class="cont">7</td>
+                <td>Pernambuco</td>
+                <td class="num">9.674.793</td>
+            </tr>
+            <tr>
+                <td class="cont">8</td>
+                <td>Ceará</td>
+                <td class="num">9.240.580</td>
+            </tr>
+            <tr>
+                <td class="cont">9</td>
+                <td>Pará</td>
+                <td class="num">8.777.124</td>
+            </tr>
+            <tr>
+                <td class="cont">10</td>
+                <td>Santa Catarina</td>
+                <td class="num">7.338.473</td>
+            </tr>
+            <tr>
+                <td class="cont">11</td>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+            <tr>
+                <td class="cont">12</td>
+                <td>Maranhão</td>
+                <td class="num">7.153.262</td>
+            </tr>
+            <tr>
+                <td class="cont">13</td>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
+            </tr>
+            <tr>
+                <td class="cont">14</td>
+                <td>Espiríto Santo</td>
+                <td class="num">4.108.508</td>
+            </tr>
+            <tr>
+                <td class="cont">15</td>
+                <td>Paraíba</td>
+                <td class="num">4.059.905</td>
+            </tr>
+            <tr>
+                <td class="cont">16</td>
+                <td>Mato Grosso</td>
+                <td class="num">3.567.234</td>
+            </tr>
+            <tr>
+                <td class="cont">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.560.903</td>
+            </tr>
+            <tr>
+                <td class="cont">18</td>
+                <td>Alagoas</td>
+                <td class="num">3.365.351</td>
+            </tr>
+            <tr>
+                <td class="cont">19</td>
+                <td>Piauí</td>
+                <td class="num">3.289.290</td>
+            </tr>
+            <tr>
+                <td class="cont">20</td>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+            <tr>
+                <td class="cont">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.839.188</td>
+            </tr>
+            <tr>
+                <td class="cont">22</td>
+                <td>Sergipe</td>
+                <td class="num">2.338.474</td>
+            </tr>
+            <tr>
+                <td class="cont">23</td>
+                <td>Rondônia</td>
+                <td class="num">1.815.278</td>
+            </tr>
+            <tr>
+                <td class="cont">24</td>
+                <td>Tocantins</td>
+                <td class="num">1.607.363</td>
+            </tr>
+            <tr>
+                <td class="cont">25</td>
+                <td>Acre</td>
+                <td class="num">906.876</td>
+            </tr>
+            <tr>
+                <td class="cont">26</td>
+                <td>Amapá</td>
+                <td class="num">877.613</td>
+            </tr>
+            <tr>
+                <td class="cont">27</td>
+                <td>Roraima</td>
+                <td class="num">652.713</td>
+            </tr>
+        </tbody>
+        <!--==========================-->
+
+        <!--======== RODAPÉ ========-->
+        <tfoot>
+            <th class="cont"></th>
+            <th class="total">Total da população</th>
+            <td class="num">212.957.639</td>
+        </tfoot>
+    </table>
+
+</body>
+</html>
