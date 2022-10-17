@@ -54,6 +54,10 @@
         .total{
             text-align: left;
         }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray ;
+        }
     </style>
 </head>
 <body>
@@ -75,12 +79,13 @@
     <h1>Tabelas com muitos dados</h1>
 
     <table>
+        <caption>Populações por unidade federativa</caption>
         <!--======== CABEÇALHO ========-->
         <thead>
             <tr>
                 <th class="cont"></th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <!--==========================-->
@@ -228,9 +233,10 @@
         <!--======== RODAPÉ ========-->
         <tfoot>
             <th class="cont"></th>
-            <th class="total">Total da população</th>
+            <th class="total" scope="row">Total da população</th>
             <td class="num">212.957.639</td>
         </tfoot>
+        <!--==============================-->
     </table>
 
 </body>
