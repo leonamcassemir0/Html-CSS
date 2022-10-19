@@ -1,0 +1,14 @@
+
+table{
+    margin: auto;
+    width: 600px;
+    height: 350px;
+}
+
+td{
+    background-color: lightcyan;
+    text-align: center;
+    border: 2px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
