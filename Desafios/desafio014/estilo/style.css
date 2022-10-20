@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    width: 420px;
+    margin: auto;
+}
+
+caption{
+    font-size: 2rem;
+    background-color: rgba(65, 65, 65, 0.774);
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0px;
+    padding: 5px;
+    color: white;
+}
+
+thead > tr > th{
+    background-color: gray;
+    border: 1px solid black;
+    color: white;
+    padding: 10px;
+}
+
+tbody > tr > th,td{
+    border: 1px solid black;
+}
+
+td{
+    padding: 5px;
+}
+
+.media{
+    background-color: gray;
+    color: white;
+    text-align: left;
+}
+
+.media > th{
+    padding-left: 5px;
+}
