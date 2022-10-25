@@ -2,3 +2,6 @@ CAPÍTULO 22 DO CURSO DE HTML E CSS
 
 -> iframe = "quadro em linha".
 -> framework diz respeito a borda do iframe.
+-> O tamanho do iframe é por padrão: 300x150.
+-> As configurações nas CSS reinam sobre as configurações feitas internamente.
+ 
