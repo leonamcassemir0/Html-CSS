@@ -4,4 +4,17 @@ CAPÍTULO 22 DO CURSO DE HTML E CSS
 -> framework diz respeito a borda do iframe.
 -> O tamanho do iframe é por padrão: 300x150.
 -> As configurações nas CSS reinam sobre as configurações feitas internamente.
+
+-> Para linkar com iframe basta dar um name para o iframe e colocar esse name no target do link.
+
+-> srcdoc = Coloca um html dentro do iframe.
+
+-> Problemas:
+	- Mecanismo de busca
+	- Acessibilidade
+	- Usabilidade
+	- Segurança
+	- Responsividade
+	- Navegação do site no iframe
+	- Indexação do conteúdo
  
